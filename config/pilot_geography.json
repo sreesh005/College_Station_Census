@@ -1,0 +1,15 @@
+{
+  "pilot_name": "Dallas-Fort Worth core counties",
+  "pilot_description": "Five counties in the DFW metro — mix of urban core, suburban growth, and exurban expansion.",
+  "state_fips": "48",
+  "state_abbr": "TX",
+  "counties": [
+    {"fips": "48085", "name": "Collin", "role": "suburban_growth"},
+    {"fips": "48113", "name": "Dallas", "role": "urban_core"},
+    {"fips": "48121", "name": "Denton", "role": "suburban_growth"},
+    {"fips": "48397", "name": "Rockwall", "role": "exurban"},
+    {"fips": "48439", "name": "Tarrant", "role": "urban_core"}
+  ],
+  "acs_vintage": "2024",
+  "cbp_vintage": "2023"
+}

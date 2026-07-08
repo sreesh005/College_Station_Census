@@ -1,0 +1,16 @@
+{
+  "name": "College Station, TX",
+  "description": "Brazos County — home to Texas A&M University and the Bryan–College Station metro.",
+  "state_fips": "48",
+  "state_abbr": "TX",
+  "county_fips": "48041",
+  "county_name": "Brazos County",
+  "county_code": 41,
+  "acs_vintage": "2023",
+  "sample_addresses": [
+    "400 Bizzell St, College Station, TX 77843",
+    "1600 University Dr E, College Station, TX 77840",
+    "979 Eisenhower St, College Station, TX 77840",
+    "2200 Briarcrest Dr, Bryan, TX 77802"
+  ]
+}

@@ -1,0 +1,46 @@
+from __future__ import annotations
+
+import json
+import os
+from pathlib import Path
+
+from dotenv import load_dotenv
+
+ROOT = Path(__file__).resolve().parents[1]
+DATA_DIR = ROOT / "data"
+RAW_DIR = DATA_DIR / "raw"
+PROCESSED_DIR = DATA_DIR / "processed"
+EXPORTS_DIR = ROOT / "exports"
+SQLITE_PATH = DATA_DIR / "location_intelligence.db"
+
+load_dotenv(ROOT / ".env")
+
+
+def load_pilot_config() -> dict:
+    with open(ROOT / "config" / "pilot_geography.json", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def ensure_dirs() -> None:
+    RAW_DIR.mkdir(parents=True, exist_ok=True)
+    PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+    EXPORTS_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def get_api_key(name: str) -> str | None:
+    value = os.getenv(name)
+    if not value:
+        return None
+    value = value.strip().strip('"').strip("'")
+    if value.startswith("\ufeff"):
+        value = value.lstrip("\ufeff")
+    if value.startswith("http"):
+        return None
+    if value.lower() in {"your_key_here", "changeme", "replace_me", "your_census_key_here", "your_fred_key_here", "your_data_gov_key_here"}:
+        return None
+    return value
+
+
+def missing_api_keys() -> list[str]:
+    required = ("CENSUS_API_KEY", "FRED_API_KEY", "DATA_GOV_API_KEY")
+    return [name for name in required if not get_api_key(name)]

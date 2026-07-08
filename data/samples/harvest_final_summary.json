@@ -1,0 +1,38 @@
+{
+  "rrc_gis": {
+    "ok": true,
+    "rows": 200,
+    "columns": [
+      "UNIQID",
+      "API",
+      "GIS_API5",
+      "GIS_WELL_NUMBER",
+      "SYMNUM",
+      "GIS_SYMBOL_DESCRIPTION",
+      "RELIAB",
+      "GIS_LOCATION_SOURCE",
+      "GIS_LAT27",
+      "GIS_LONG27",
+      "GIS_LAT83",
+      "GIS_LONG83",
+      "OBJECTID"
+    ],
+    "path": "data\\samples\\rrc_gis_midland_wells_sample.csv"
+  },
+  "reeves": {
+    "ok": false,
+    "county": "reeves",
+    "term": "mineral deed",
+    "status": 404,
+    "cells": 0,
+    "html_len": 444059
+  },
+  "tarrant": {
+    "ok": false,
+    "county": "tarrant",
+    "term": "mineral deed",
+    "status": 404,
+    "cells": 0,
+    "html_len": 72024
+  }
+}

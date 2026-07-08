@@ -1,0 +1,26 @@
+{
+  "midland_api_dbf": {
+    "ok": false,
+    "filename": "api165.dbf",
+    "row_index": "0",
+    "bytes": 294058,
+    "ctype": "text/html;charset=UTF-8",
+    "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><head id=\"j_"
+  },
+  "permit_pending": {
+    "ok": false,
+    "filename": "dp_drilling_permit_pending_20200903110806.txt",
+    "row_index": "0",
+    "bytes": 302671,
+    "ctype": "text/html;charset=UTF-8",
+    "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><head id=\"j_"
+  },
+  "wellbore_gz_head": {
+    "ok": false,
+    "filename": "dbf900.txt.gz",
+    "row_index": "0",
+    "bytes": 25245,
+    "ctype": "text/html;charset=UTF-8",
+    "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><head id=\"j_"
+  }
+}

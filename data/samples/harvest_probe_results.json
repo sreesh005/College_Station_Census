@@ -1,0 +1,60 @@
+{
+  "rrc": [
+    {
+      "url": "https://mft.rrc.texas.gov/link/b070ce28-5c58-4fe2-9eb7-8b70befb7af9/dbf900.txt.gz",
+      "status": 404,
+      "content_type": "text/html;charset=UTF-8",
+      "error": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><head id=\"j_id_5\"><link type=\"text/css\" rel=\"stylesheet\" href=\"/javax.faces.resource/theme.c"
+    },
+    {
+      "url": "https://mft.rrc.texas.gov/link/1eb94d66-461d-4114-93f7-b4bc04a70674/api165.dbf",
+      "status": 404,
+      "content_type": "text/html;charset=UTF-8",
+      "error": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><head id=\"j_id_5\"><link type=\"text/css\" rel=\"stylesheet\" href=\"/javax.faces.resource/theme.c"
+    }
+  ],
+  "govos": [
+    {
+      "county": "midland",
+      "home_status": 200,
+      "script_count": 8,
+      "api_hints": [
+        "\"/search/advanced\"",
+        "\"/search/image\"",
+        "https://github.com/kofile/ko-search-api/issues/1332"
+      ]
+    },
+    {
+      "county": "tarrant",
+      "home_status": 200,
+      "script_count": 8,
+      "api_hints": [
+        "\"/search/advanced\"",
+        "\"/search/image\"",
+        "https://github.com/kofile/ko-search-api/issues/1332"
+      ]
+    },
+    {
+      "county": "reeves",
+      "home_status": 200,
+      "script_count": 8,
+      "api_hints": [
+        "\"/search/advanced\"",
+        "\"/search/image\"",
+        "https://github.com/kofile/ko-search-api/issues/1332"
+      ]
+    }
+  ],
+  "harris": [
+    {
+      "url": "https://cclerk.hctx.net/Applications/WebSearch/RP.aspx",
+      "status": 200,
+      "len": 59031
+    },
+    {
+      "url": "https://cclerk.hctx.net/Applications/WebSearch/Home.aspx",
+      "status": 200,
+      "len": 50516
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "api165": {
+    "ok": false,
+    "filename": "api165.dbf",
+    "row_index": "0",
+    "resource_key": "2787",
+    "bytes": 294058,
+    "magic": "b'<?xm'",
+    "ctype": "text/html;charset=UTF-8",
+    "cookies": {
+      "JSESSIONID": "AA0E4B9DE51A0F5FB12514ECA4A696C1",
+      "oam.Flash.RENDERMAP.TOKEN": "43lyyiw6a"
+    },
+    "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><head id=\"j_id_5\"><link type=\"text/css\" rel=\"stylesheet\" href=\"/javax.faces.resource/theme.c",
+    "ajax_bytes": 1172770,
+    "ajax_preview": "\u0003~\u0007\u0005\u0014\u0013\u0000\u0000a\u0002\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000ABSTRACT\u0000\u0000\u0000C\u0000\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000APINUM\u0000\u0000\u0000\u0000\u0000C\u0000\u0000\u0000\u0000\b\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000BLOCK\u0000\u0000\u0000\u0000\u0000\u0000C\u0000\u0000\u0000\u0000\n\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000COMPLETION\u0000C\u0000\u0000\u0000\u0000\b\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000FIELD_NAME\u0000C\u0000\u0000\u0000\u0000 \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000LEASE_NAME\u0000C\u0000\u0000\u0000\u0000 \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000GAS_RRCID\u0000\u0000C\u0000\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000OIL_GAS_CO\u0000C\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000ON_OFF_SCH\u0000C\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000OPERATOR\u0000\u0000\u0000C\u0000\u0000\u0000\u0000 \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000PERMIT_NUM\u0000C\u0000\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000PLUG_DATE\u0000\u0000C\u0000\u0000\u0000\u0000\b\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000REFER_TO_A\u0000C\u0000\u0000\u0000\u0000\b\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000SECTION\u0000\u0000\u0000\u0000C\u0000\u0000\u0000\u0000\b\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000SURVEY\u0000\u0000\u0000\u0000\u0000C\u0000\u0000\u0000\u00007\u0000\u0000\u0000"
+  },
+  "dbf900_txt": {
+    "ok": false,
+    "filename": "dbf900.txt",
+    "row_index": "0",
+    "resource_key": "62284",
+    "bytes": 25245,
+    "magic": "b'<?xm'",
+    "ctype": "text/html;charset=UTF-8",
+    "cookies": {
+      "JSESSIONID": "C53FC300BF937B2ECDC771569AF614B4",
+      "oam.Flash.RENDERMAP.TOKEN": "43lyyiw6e"
+    },
+    "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><head id=\"j_id_5\"><link type=\"text/css\" rel=\"stylesheet\" href=\"/javax.faces.resource/theme.c",
+    "ajax_bytes": 6541565290,
+    "ajax_preview": "0100100001010106001 19631027000000000000000000000000000 000000000010000100000000000000  NNN00000000Y0 13A19930900000019931022199602L0040230000000199801000000Y 00000000                                                                                02O0604411   1  00      000000000000000000000                                          0000000000000000000000000000000000N0000000     00000          0000  NN00000000                                                                                  038015"
+  },
+  "permit_txt": {
+    "ok": false,
+    "filename": "dp_drilling_permit_pending_20200903110806.txt",
+    "row_index": "0",
+    "resource_key": "15273",
+    "bytes": 302671,
+    "magic": "b'<?xm'",
+    "ctype": "text/html;charset=UTF-8",
+    "cookies": {
+      "JSESSIONID": "27464BB289348B24E9F7275473E90B1F",
+      "oam.Flash.RENDERMAP.TOKEN": "43lyyiww1"
+    },
+    "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><head id=\"j_id_5\"><link type=\"text/css\" rel=\"stylesheet\" href=\"/javax.faces.resource/theme.c",
+    "ajax_bytes": 730,
+    "ajax_preview": "SWR38_ABBR_NOTICE}IS_REAPPLIED}UNIVERSAL_DOC_NO}STATUS_NUMBER}EFFECTIVE_DT}RETURN_DT}TOTAL_DEPTH}IS_AMENDMENT}SWR_36_FLAG}DEVELOP_MINERALS_FLAG}CASE_DOCKET_NO}FINAL_PROTEST_DT}STATUS_SEQ_NO}SPUD_DT}EXPEDITE_FLAG}EXPEDITE_DATE_TIME}FILING_PURPOSE_CODE}SURFACE_CASING_DT}DEFAULT_LEASE_NAME}DEFAULT_WELL_NUMBER}DEFAULT_VERTICAL}DEFAULT_HORIZANTAL}DEFAULT_SIDETRACK}LOCKED_BY}DEFAULT_DIRECTIONAL}STATUS_CODE}EXPIRATION_DATE}WALKIN_CONTACT_NAME}WALKIN_CONTACT_PHONE}COMPLETION_CODE}SWR_SUBSECT_CODE}STAT_D"
+  },
+  "govos_js": {
+    "client": "/client.ff70b0c68ed713f9ec0d.js",
+    "js_len": 940926,
+    "hits": {
+      "https://[a-zA-Z0-9._/-]+search[a-zA-Z0-9._/-]*": [
+        "https://github.com/kofile/ko-search-api/issues/1332"
+      ],
+      "\"/[a-zA-Z0-9/_-]*search[a-zA-Z0-9/_-]*\"": [
+        "\"/search/advanced\"",
+        "\"/search/image\""
+      ],
+      "ko-search[a-zA-Z0-9._/-]*": [
+        "ko-search",
+        "ko-search-api/issues/1332"
+      ],
+      "graphql[a-zA-Z0-9._/-]*": [],
+      "tenantId[^,]{0,80}": [
+        "tenantId\")",
+        "tenantId:b",
+        "tenantId:b}))}"
+      ],
+      "department[^,]{0,80}": [
+        "department",
+        "department code was specified in the url.\"}));if(e.view.loading.isLoading){const{view:t",
+        "department!==n?Object($v.of)(DU.a.updateSelectedDepartment(e.department)):Object($v.empty)",
+        "department\"",
+        "department\")",
+        "department\"===e)return s(Pp",
+        "department&&Object(u.E)(e.legals)?(e=>{const t=JSON.parse(e.legals)[0]",
+        "department)",
+        "department-dates\"",
+        "department-dates\":\"error-fetching-department-dates\"",
+        "department-dates\":function(e",
+        "department-dates\":function(e){return n$(r$({}",
+        "department-select\"",
+        "department.\":\"\"",
+        "department.\":\"\"})"
+      ]
+    }
+  }
+}

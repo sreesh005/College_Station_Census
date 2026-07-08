@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "total_rows": 150,
+  "mineral_related_rows": 16,
+  "csv": "C:\\Users\\kkr84\\Projects\\location-intelligence\\data\\samples\\courthouse_mineral_index_harvest.csv",
+  "mineral_csv": "C:\\Users\\kkr84\\Projects\\location-intelligence\\data\\samples\\courthouse_mineral_only_sample.csv",
+  "sample": [
+    {
+      "grantor": "HARRISON MICHAEL A",
+      "grantee": "CAPROCK PERMIAN CRUDE LLC",
+      "doc_type": "RIGHT OF WAY",
+      "recorded_date": "10/22/2019",
+      "doc_number": "2019017429",
+      "book_volume_page": "--/--/--",
+      "legal_description": "Survey- Name: H&GNRR Survey: 1511 Section: 30",
+      "county": "reeves",
+      "search_query": "mineral deed",
+      "source_url": "https://reeves.tx.publicsearch.us/results?department=RP&searchType=quickSearch&searchQuery=mineral+deed"
+    },
+    {
+      "grantor": "NEECE JOHN R",
+      "grantee": "BRIGHAM MINERALS LLC",
+      "doc_type": "MINERAL DEED",
+      "recorded_date": "10/22/2019",
+      "doc_number": "2019017441",
+      "book_volume_page": "--/--/--",
+      "legal_description": "Subdivision- Name: TOYAH VALLEY GRAPE & ALFALFA COMPAN Block: 10",
+      "county": "reeves",
+      "search_query": "mineral deed",
+      "source_url": "https://reeves.tx.publicsearch.us/results?department=RP&searchType=quickSearch&searchQuery=mineral+deed"
+    },
+    {
+      "grantor": "PEREZ BERNABE ARIAS",
+      "grantee": "WATERBRIDGE TEXAS MIDSTREAM LLC",
+      "doc_type": "EASEMENT",
+      "recorded_date": "10/23/2019",
+      "doc_number": "2019017511",
+      "book_volume_page": "--/--/--",
+      "legal_description": "Survey- Name: W&NWRR Survey: 767 Section: 24 Acres: 10.40",
+      "county": "reeves",
+      "search_query": "mineral deed",
+      "source_url": "https://reeves.tx.publicsearch.us/results?department=RP&searchType=quickSearch&searchQuery=mineral+deed"
+    },
+    {
+      "grantor": "CENTENNIAL RESOURCE PRODUCTION LLC",
+      "grantee": "SUNDOWN UNIT",
+      "doc_type": "UNIT AGREEMENT/DECLARATION/DESIGNATION",
+      "recorded_date": "10/23/2019",
+      "doc_number": "2019017523",
+      "book_volume_page": "--/--/--",
+      "legal_description": "Survey- Name: H&GNRR Survey: 1769 Section: 300 Acres: 640",
+      "county": "reeves",
+      "search_query": "mineral deed",
+      "source_url": "https://reeves.tx.publicsearch.us/results?department=RP&searchType=quickSearch&searchQuery=mineral+deed"
+    },
+    {
+      "grantor": "BROWNCOW LLC",
+      "grantee": "PRIMEXX RESOURCE DEVELOPMENT LLC",
+      "doc_type": "MEMORANDUM OF LEASE",
+      "recorded_date": "10/24/2019",
+      "doc_number": "2019017565",
+      "book_volume_page": "--/--/--",
+      "legal_description": "Survey- Name: H&GNRR Section: SW/4 & E/2 SE/4 214 Acres: 240",
+      "county": "reeves",
+      "search_query": "mineral deed",
+      "source_url": "https://reeves.tx.publicsearch.us/results?department=RP&searchType=quickSearch&searchQuery=mineral+deed"
+    }
+  ]
+}

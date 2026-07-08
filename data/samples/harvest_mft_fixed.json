@@ -1,0 +1,24 @@
+{
+  "api165": {
+    "ok": false,
+    "filename": "api165.dbf",
+    "bytes": 294058,
+    "ctype": "text/html;charset=UTF-8",
+    "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><head id=\"j_id_5\"><link type=\"text/css\" re"
+  },
+  "api011": {
+    "ok": false,
+    "filename": "api011.dbf",
+    "bytes": 294058,
+    "ctype": "text/html;charset=UTF-8",
+    "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><head id=\"j_id_5\"><link type=\"text/css\" re"
+  },
+  "permit": {
+    "ok": false,
+    "error": "row not found"
+  },
+  "wellbore_gz": {
+    "ok": false,
+    "error": "row not found"
+  }
+}

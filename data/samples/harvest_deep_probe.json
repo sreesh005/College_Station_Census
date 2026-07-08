@@ -1,0 +1,266 @@
+{
+  "rrc_mft": {
+    "filename": "api165.dbf",
+    "row_index": "0",
+    "resource_key": "2787",
+    "attempts": [
+      {
+        "variant": 0,
+        "status": 200,
+        "ctype": "text/html;charset=UTF-8",
+        "bytes": 294058,
+        "magic": "3c3f786d6c207665",
+        "disp": null
+      },
+      {
+        "variant": 1,
+        "status": 200,
+        "ctype": "text/xml;charset=UTF-8",
+        "bytes": 269,
+        "magic": "3c3f786d6c207665",
+        "disp": null
+      },
+      {
+        "url": "https://mft.rrc.texas.gov/link/1eb94d66-461d-4114-93f7-b4bc04a70674/download/api165.dbf",
+        "status": 404,
+        "bytes": 7527,
+        "magic": "3c3f786d6c207665",
+        "ctype": "text/html;charset=UTF-8"
+      },
+      {
+        "url": "https://mft.rrc.texas.gov/webclient/godrive/PublicShare/1eb94d66-461d-4114-93f7-b4bc04a70674/api165.dbf",
+        "status": 200,
+        "bytes": 10997,
+        "magic": "3c3f786d6c207665",
+        "ctype": "text/html;charset=UTF-8"
+      },
+      {
+        "url": "https://mft.rrc.texas.gov/webclient/godrive/download?resourceKey=2787",
+        "status": 200,
+        "bytes": 10997,
+        "magic": "3c3f786d6c207665",
+        "ctype": "text/html;charset=UTF-8"
+      },
+      {
+        "url": "https://mft.rrc.texas.gov/webclient/godrive/PublicGoDrive.xhtml?resourceKey=2787",
+        "status": 200,
+        "bytes": 294058,
+        "magic": "3c3f786d6c207665",
+        "ctype": "text/html;charset=UTF-8"
+      }
+    ]
+  },
+  "rrc_mft_small": {
+    "filename": "api011.dbf",
+    "row_index": "0",
+    "resource_key": "2787",
+    "attempts": [
+      {
+        "variant": 0,
+        "status": 200,
+        "ctype": "text/html;charset=UTF-8",
+        "bytes": 294058,
+        "magic": "3c3f786d6c207665",
+        "disp": null
+      },
+      {
+        "variant": 1,
+        "status": 200,
+        "ctype": "text/xml;charset=UTF-8",
+        "bytes": 269,
+        "magic": "3c3f786d6c207665",
+        "disp": null
+      },
+      {
+        "url": "https://mft.rrc.texas.gov/link/1eb94d66-461d-4114-93f7-b4bc04a70674/download/api011.dbf",
+        "status": 404,
+        "bytes": 7527,
+        "magic": "3c3f786d6c207665",
+        "ctype": "text/html;charset=UTF-8"
+      },
+      {
+        "url": "https://mft.rrc.texas.gov/webclient/godrive/PublicShare/1eb94d66-461d-4114-93f7-b4bc04a70674/api011.dbf",
+        "status": 200,
+        "bytes": 10997,
+        "magic": "3c3f786d6c207665",
+        "ctype": "text/html;charset=UTF-8"
+      },
+      {
+        "url": "https://mft.rrc.texas.gov/webclient/godrive/download?resourceKey=2787",
+        "status": 200,
+        "bytes": 10997,
+        "magic": "3c3f786d6c207665",
+        "ctype": "text/html;charset=UTF-8"
+      },
+      {
+        "url": "https://mft.rrc.texas.gov/webclient/godrive/PublicGoDrive.xhtml?resourceKey=2787",
+        "status": 200,
+        "bytes": 294058,
+        "magic": "3c3f786d6c207665",
+        "ctype": "text/html;charset=UTF-8"
+      }
+    ]
+  },
+  "rrc_text_pages": [
+    {
+      "url": "https://mft.rrc.texas.gov/link/0ad92a65-4212-49a1-98a7-d667a55fb497",
+      "sample_files": [
+        "dp_drilling_permit_pending_20200830170803.txt",
+        "dp_drilling_permit_pending_20200831110810.txt",
+        "dp_drilling_permit_pending_20200831170804.txt",
+        "dp_drilling_permit_pending_20200901110809.txt",
+        "dp_drilling_permit_pending_20200901170805.txt",
+        "dp_drilling_permit_pending_20200902110805.txt",
+        "dp_drilling_permit_pending_20200902170805.txt",
+        "dp_drilling_permit_pending_20200903110806.txt"
+      ],
+      "html_len": 302671
+    },
+    {
+      "url": "https://mft.rrc.texas.gov/link/b070ce28-5c58-4fe2-9eb7-8b70befb7af9",
+      "sample_files": [
+        "dbf900.ebc.gz",
+        "dbf900.txt",
+        "dbf900.txt.gz"
+      ],
+      "html_len": 25245
+    }
+  ],
+  "govos_midland": {
+    "county": "midland",
+    "home_status": 200,
+    "scripts": [
+      "//d2wy8f7a9ursnm.cloudfront.net/v4/bugsnag.min.js",
+      "//d2wy8f7a9ursnm.cloudfront.net/bugsnag-plugins/v1/bugsnag-react.min.js",
+      "/vendor.84a9aa0484220fd66950.dll.js",
+      "/0.ff70b0c68ed713f9ec0d.js",
+      "/client.ff70b0c68ed713f9ec0d.js",
+      "/vendor/broadcast-channel.1438c41a1b58ca42ea982559289e9ba9.js",
+      "/vendor/htmx.a32c80ce5d772ed1f522f0c582fb2742.js",
+      "/vendor/hyperscript.d8d773083be6bd367a0ecf361b5ee485.js"
+    ],
+    "api_hints": [
+      "/search/advanced",
+      "/search/image",
+      "https://github.com/kofile/ko-search-api/issues/1332",
+      "https://kofilehelp.zendesk.com/",
+      "https://kofilehelp.zendesk.com/hc/en-us",
+      "https://kofilehelp.zendesk.com/hc/en-us/articles/360042243453-End-of-Support-for-Internet-Explorer",
+      "https://kofilehelp.zendesk.com/hc/en-us/articles/360059921113-Property-Alert-FAQ",
+      "https://www.govos.com/privacy-policy",
+      "https://www.govos.com/terms-and-conditions"
+    ],
+    "search_tests": [
+      {
+        "url": "https://midland.tx.publicsearch.us/api/search/quick",
+        "method": "GET",
+        "status": 404,
+        "ctype": "text/html; charset=utf-8",
+        "preview": "<!doctype html>\n<html lang=\"en-US\" data-reactroot=\"\"><head><script>\n(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.s"
+      },
+      {
+        "url": "https://midland.tx.publicsearch.us/api/search/quick",
+        "method": "POST",
+        "status": 404,
+        "ctype": "text/html; charset=utf-8",
+        "preview": "<!doctype html>\n<html lang=\"en-US\" data-reactroot=\"\"><head><script>\n(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.s"
+      },
+      {
+        "url": "https://midland.tx.publicsearch.us/api/v1/search",
+        "method": "GET",
+        "status": 404,
+        "ctype": "text/html; charset=utf-8",
+        "preview": "<!doctype html>\n<html lang=\"en-US\" data-reactroot=\"\"><head><script>\n(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.s"
+      },
+      {
+        "url": "https://midland.tx.publicsearch.us/api/v1/search",
+        "method": "POST",
+        "status": 404,
+        "ctype": "text/html; charset=utf-8",
+        "preview": "<!doctype html>\n<html lang=\"en-US\" data-reactroot=\"\"><head><script>\n(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.s"
+      },
+      {
+        "url": "https://api.publicsearch.us/midland.tx/search",
+        "method": "GET",
+        "error": "HTTPSConnectionPool(host='api.publicsearch.us', port=443): Max retries exceeded with url: /midland.tx/search?query=mineral+deed (Caused by NameResolutionError(\"HTTPSConnection(host='api.publicsearch.us', port=443): Failed to resolve 'api.publicsearch.us' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "url": "https://api.publicsearch.us/midland.tx/search",
+        "method": "POST",
+        "error": "HTTPSConnectionPool(host='api.publicsearch.us', port=443): Max retries exceeded with url: /midland.tx/search (Caused by NameResolutionError(\"HTTPSConnection(host='api.publicsearch.us', port=443): Failed to resolve 'api.publicsearch.us' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  "govos_reeves": {
+    "county": "reeves",
+    "home_status": 200,
+    "scripts": [
+      "//d2wy8f7a9ursnm.cloudfront.net/v4/bugsnag.min.js",
+      "//d2wy8f7a9ursnm.cloudfront.net/bugsnag-plugins/v1/bugsnag-react.min.js",
+      "/vendor.84a9aa0484220fd66950.dll.js",
+      "/0.ff70b0c68ed713f9ec0d.js",
+      "/client.ff70b0c68ed713f9ec0d.js",
+      "/vendor/broadcast-channel.1438c41a1b58ca42ea982559289e9ba9.js",
+      "/vendor/htmx.a32c80ce5d772ed1f522f0c582fb2742.js",
+      "/vendor/hyperscript.d8d773083be6bd367a0ecf361b5ee485.js"
+    ],
+    "api_hints": [
+      "/search/advanced",
+      "/search/image",
+      "https://github.com/kofile/ko-search-api/issues/1332",
+      "https://kofilehelp.zendesk.com/",
+      "https://kofilehelp.zendesk.com/hc/en-us",
+      "https://kofilehelp.zendesk.com/hc/en-us/articles/360042243453-End-of-Support-for-Internet-Explorer",
+      "https://kofilehelp.zendesk.com/hc/en-us/articles/360059921113-Property-Alert-FAQ",
+      "https://www.govos.com/privacy-policy",
+      "https://www.govos.com/terms-and-conditions"
+    ],
+    "search_tests": [
+      {
+        "url": "https://reeves.tx.publicsearch.us/api/search/quick",
+        "method": "GET",
+        "status": 404,
+        "ctype": "text/html; charset=utf-8",
+        "preview": "<!doctype html>\n<html lang=\"en-US\" data-reactroot=\"\"><head><script>\n(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.s"
+      },
+      {
+        "url": "https://reeves.tx.publicsearch.us/api/search/quick",
+        "method": "POST",
+        "status": 404,
+        "ctype": "text/html; charset=utf-8",
+        "preview": "<!doctype html>\n<html lang=\"en-US\" data-reactroot=\"\"><head><script>\n(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.s"
+      },
+      {
+        "url": "https://reeves.tx.publicsearch.us/api/v1/search",
+        "method": "GET",
+        "status": 404,
+        "ctype": "text/html; charset=utf-8",
+        "preview": "<!doctype html>\n<html lang=\"en-US\" data-reactroot=\"\"><head><script>\n(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.s"
+      },
+      {
+        "url": "https://reeves.tx.publicsearch.us/api/v1/search",
+        "method": "POST",
+        "status": 404,
+        "ctype": "text/html; charset=utf-8",
+        "preview": "<!doctype html>\n<html lang=\"en-US\" data-reactroot=\"\"><head><script>\n(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.s"
+      },
+      {
+        "url": "https://api.publicsearch.us/reeves.tx/search",
+        "method": "GET",
+        "error": "HTTPSConnectionPool(host='api.publicsearch.us', port=443): Max retries exceeded with url: /reeves.tx/search?query=mineral+deed (Caused by NameResolutionError(\"HTTPSConnection(host='api.publicsearch.us', port=443): Failed to resolve 'api.publicsearch.us' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "url": "https://api.publicsearch.us/reeves.tx/search",
+        "method": "POST",
+        "error": "HTTPSConnectionPool(host='api.publicsearch.us', port=443): Max retries exceeded with url: /reeves.tx/search (Caused by NameResolutionError(\"HTTPSConnection(host='api.publicsearch.us', port=443): Failed to resolve 'api.publicsearch.us' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  "harris_search": {
+    "ok": true,
+    "post_status": 200,
+    "result_tables": 0,
+    "tr_count": 0,
+    "preview": " <!DOCTYPE html> <html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en-us\"> <head id=\"ctl00_Head1\"> <style type=\"text/css\"> html, body { background: none !important; } #overlay { Position: fixed; z-index: 99; top: 0px; left: 0px; background-color: #FFFFFF; width: 100%; height: 100%; filter: Alpha(Opacity=80); opacity: 0.80; } #theprogress { background-color: transparent; width: 200px; height: 200px; text-align: center; filter: Alpha(Opacity=100); opacity: 1; } #modalprogress { position: absolute; top: 50%; left: 50%; margin: -11px 0 0 -55px; color: white; } Body > #modalprogress { Position: fixed; } </style> <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js\"></script> <script src=\"https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js\"></script> <title> Web Inquiry </title> <!--UNIFY--> <!-- Meta --> <meta charset=\"utf-8\" /><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale="
+  }
+}
