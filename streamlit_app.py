@@ -18,6 +18,7 @@ from src.address_intel.census import fetch_county_acs, fetch_tract_acs
 from src.address_intel.geocoder import geocode_address
 from src.address_intel.traffic import fetch_county_traffic, fetch_nearby_traffic
 from src.config import get_api_key
+from streamlit_site_selection import render_site_selection_tab
 
 CONFIG_PATH = ROOT / "config" / "college_station.json"
 
@@ -249,59 +250,69 @@ def main() -> None:
 
     st.title("College Station Location Intelligence")
     st.caption(
-        "Enter a property address to see census demographics, housing, education, "
-        "and nearby traffic — a preview of what we can build for real estate agents."
+        "Analyze a specific address or rank the best census tracts for your business priorities."
     )
 
     with st.sidebar:
-        st.header("Search")
-        sample = cfg.get("sample_addresses", [])
-        default_addr = sample[0] if sample else "400 Bizzell St, College Station, TX 77843"
-
-        if "address_input" not in st.session_state:
-            st.session_state.address_input = default_addr
-
-        if "pending_address" in st.session_state:
-            st.session_state.address_input = st.session_state.pop("pending_address")
-
-        address = st.text_input("Property address", key="address_input")
-        traffic_radius = st.slider(
-            "Traffic search radius (miles)", 1.0, 10.0, 3.0, 0.5, key="traffic_radius"
-        )
-
-        analyze = st.button("Analyze Address", type="primary", use_container_width=True)
-
-        st.divider()
-        st.subheader("Try a sample")
-        for i, addr in enumerate(sample):
-            if st.button(addr, key=f"sample_{i}", use_container_width=True):
-                st.session_state.pending_address = addr
-                st.session_state.run_analysis = True
-                st.rerun()
-
-        if st.session_state.pop("run_analysis", False):
-            analyze = True
-            st.session_state.show_results = True
-
-        if analyze:
-            st.session_state.show_results = True
-
-        if st.button("Clear cache & refresh data", use_container_width=True):
-            st.cache_data.clear()
-            st.session_state.show_results = True
-            st.rerun()
-
-        st.divider()
         st.markdown("**Data sources**")
         st.markdown(
-            "- Census Geocoder (address → tract)\n"
-            "- ACS 5-Year Estimates\n"
-            "- FHWA HPMS (road traffic)"
+            "- Census Geocoder & ACS 5-Year\n"
+            "- FHWA HPMS (road traffic)\n"
+            "- Census TIGER (tract boundaries)"
         )
         if has_census_key:
             st.success("Census API key configured")
         else:
-            st.warning("No Census API key — using sample demographics")
+            st.warning("No Census API key — address demo uses sample data")
+        if st.button("Clear cache & refresh data", use_container_width=True):
+            st.cache_data.clear()
+            st.session_state.show_results = True
+            st.session_state.site_show_rankings = True
+            st.rerun()
+
+    tab_address, tab_site = st.tabs(["Analyze Address", "Find Best Location"])
+
+    with tab_address:
+        _render_address_tab(cfg, has_census_key)
+    with tab_site:
+        render_site_selection_tab(cfg, has_census_key)
+
+
+def _render_address_tab(cfg: dict, has_census_key: bool) -> None:
+    sample = cfg.get("sample_addresses", [])
+    default_addr = sample[0] if sample else "400 Bizzell St, College Station, TX 77843"
+
+    if "address_input" not in st.session_state:
+        st.session_state.address_input = default_addr
+    if "pending_address" in st.session_state:
+        st.session_state.address_input = st.session_state.pop("pending_address")
+
+    c1, c2, c3 = st.columns([3, 1, 1])
+    with c1:
+        address = st.text_input("Property address", key="address_input")
+    with c2:
+        traffic_radius = st.slider(
+            "Traffic radius (mi)", 1.0, 10.0, 3.0, 0.5, key="traffic_radius"
+        )
+    with c3:
+        st.write("")
+        st.write("")
+        analyze = st.button("Analyze Address", type="primary", use_container_width=True)
+
+    sc1, sc2, sc3, sc4 = st.columns(4)
+    for i, addr in enumerate(sample):
+        col = [sc1, sc2, sc3, sc4][i % 4]
+        with col:
+            if st.button(f"Sample {i + 1}", key=f"sample_{i}", use_container_width=True):
+                st.session_state.pending_address = addr
+                st.session_state.run_analysis = True
+                st.rerun()
+
+    if st.session_state.pop("run_analysis", False):
+        analyze = True
+        st.session_state.show_results = True
+    if analyze:
+        st.session_state.show_results = True
 
     if not st.session_state.get("show_results"):
         st.info("Enter an address and click **Analyze Address** to get started.")
