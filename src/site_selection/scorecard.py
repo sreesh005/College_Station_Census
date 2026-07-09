@@ -143,7 +143,7 @@ def build_tract_scorecard(
 
     if acs.empty:
         raise RuntimeError(
-            "Could not fetch tract ACS data. Add CENSUS_API_KEY to .env for site selection."
+            "Could not fetch tract ACS data. Add CENSUS_API_KEY to .env or Streamlit secrets."
         )
 
     df = centroids.merge(acs, on="tract_fips", how="inner", suffixes=("", "_acs"))

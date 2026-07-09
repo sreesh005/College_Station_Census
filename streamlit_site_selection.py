@@ -68,7 +68,11 @@ def render_site_selection_tab(cfg: dict, has_census_key: bool) -> None:
     )
 
     if not has_census_key:
-        st.error("Site selection requires a Census API key in `.env` (`CENSUS_API_KEY`).")
+        st.error(
+            "Site selection requires a Census API key. "
+            "Locally: add `CENSUS_API_KEY` to `.env`. "
+            "On Streamlit Cloud: add it under **App settings → Secrets**."
+        )
         return
 
     col_preset, col_traffic = st.columns([2, 1])

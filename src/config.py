@@ -27,8 +27,19 @@ def ensure_dirs() -> None:
     EXPORTS_DIR.mkdir(parents=True, exist_ok=True)
 
 
+def _from_streamlit_secrets(name: str) -> str | None:
+    try:
+        import streamlit as st
+
+        if name in st.secrets:
+            return str(st.secrets[name])
+    except Exception:
+        pass
+    return None
+
+
 def get_api_key(name: str) -> str | None:
-    value = os.getenv(name)
+    value = os.getenv(name) or _from_streamlit_secrets(name)
     if not value:
         return None
     value = value.strip().strip('"').strip("'")
