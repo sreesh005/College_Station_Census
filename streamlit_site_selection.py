@@ -1,4 +1,4 @@
-"""Site selection tab — weighted tract ranking for College Station."""
+"""Site selection tab — weighted tract ranking (config-driven county)."""
 
 from __future__ import annotations
 
@@ -21,7 +21,15 @@ def cached_tract_scorecard(state_fips: str, county_code: str, traffic_radius: fl
     )
 
 
-def site_selection_map(ranked: pd.DataFrame) -> go.Figure:
+def _metro_label(cfg: dict) -> str:
+    """User-facing metro name for site selection copy."""
+    if cfg.get("metro_name"):
+        return str(cfg["metro_name"])
+    name = str(cfg.get("name", "Dallas–Fort Worth"))
+    return name.split(",")[0].strip()
+
+
+def site_selection_map(ranked: pd.DataFrame, metro_label: str) -> go.Figure:
     fig = px.scatter_mapbox(
         ranked,
         lat="latitude",
@@ -39,10 +47,10 @@ def site_selection_map(ranked: pd.DataFrame) -> go.Figure:
             "longitude": False,
             "population": ":,.0f",
         },
-        color_continuous_scale=["#D4C4B0", "#500000"],
+        color_continuous_scale=["#E3F2FD", "#1565C0"],
         size_max=18,
         zoom=10,
-        title="Site Selection Score Map (Brazos County Tracts)",
+        title=f"Site Selection Score Map ({metro_label})",
     )
     fig.update_layout(
         mapbox_style="open-street-map",
@@ -60,12 +68,16 @@ def _apply_preset_weights(preset: str) -> None:
     st.session_state.last_preset = preset
 
 
-def render_site_selection_tab(cfg: dict, has_census_key: bool) -> None:
-    st.subheader("Find the Best Location")
-    st.markdown(
-        "Rank every census tract in **Brazos County** by the metrics you care about. "
-        "Choose a business preset or set custom weights, then see the top areas on a map."
-    )
+def render_site_selection_tab(cfg: dict, has_census_key: bool, show_header: bool = True) -> None:
+    metro = _metro_label(cfg)
+    county_name = cfg.get("county_name", "Dallas County")
+    if show_header:
+        st.subheader("Find the Best Location")
+        st.markdown(
+            f"Rank every census tract in the **{metro}** metro by the metrics you care about. "
+            "Choose a business preset or set custom weights, then see the top areas on a map."
+        )
+    st.caption(f"Tract scorecard scope: {county_name} (DFW pilot county).")
 
     if not has_census_key:
         st.error(
@@ -128,7 +140,7 @@ def render_site_selection_tab(cfg: dict, has_census_key: bool) -> None:
         return
 
     try:
-        with st.spinner("Building tract scorecard (63 tracts — cached after first run)..."):
+        with st.spinner(f"Building tract scorecard for {metro} (cached after first run)..."):
             scorecard = cached_tract_scorecard(
                 cfg["state_fips"],
                 cfg["county_fips"][2:],
@@ -143,7 +155,7 @@ def render_site_selection_tab(cfg: dict, has_census_key: bool) -> None:
         return
 
     top = ranked.head(10)
-    st.success(f"Ranked **{len(ranked)}** tracts in {cfg['county_name']}.")
+    st.success(f"Ranked **{len(ranked)}** tracts in **{metro}** ({county_name}).")
 
     m1, m2, m3 = st.columns(3)
     with m1:
@@ -153,13 +165,19 @@ def render_site_selection_tab(cfg: dict, has_census_key: bool) -> None:
     with m3:
         st.metric("Top Traffic (AADT)", f"{top.iloc[0]['nearby_max_aadt']:,.0f}")
 
-    st.plotly_chart(site_selection_map(ranked), use_container_width=True)
+    st.plotly_chart(site_selection_map(ranked, metro), use_container_width=True)
 
-    st.subheader("Top 10 Locations")
-    display = top[
+    st.subheader("Top 10 Tracts")
+    top_display = top.copy()
+    top_display["Coordinates"] = top_display.apply(
+        lambda r: f"{r['latitude']:.4f}, {r['longitude']:.4f}", axis=1
+    )
+    display = top_display[
         [
             "site_score",
             "tract_label",
+            "tract_fips",
+            "Coordinates",
             "population",
             "median_household_income",
             "nearby_max_aadt",
@@ -170,6 +188,7 @@ def render_site_selection_tab(cfg: dict, has_census_key: bool) -> None:
         columns={
             "site_score": "Score",
             "tract_label": "Census Tract",
+            "tract_fips": "Tract FIPS",
             "population": "Population",
             "median_household_income": "Median Income",
             "nearby_max_aadt": "Peak Traffic (AADT)",
@@ -191,9 +210,5 @@ def render_site_selection_tab(cfg: dict, has_census_key: bool) -> None:
         },
     )
 
-    with st.expander("Full tract rankings"):
+    with st.expander("Full tract rankings (includes latitude & longitude)"):
         st.dataframe(ranked, use_container_width=True, hide_index=True)
-
-    st.caption(
-        "Phase 1 site selection ranks census tracts. Phase 2 will overlay available lease/buy listings."
-    )

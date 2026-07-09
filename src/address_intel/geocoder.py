@@ -19,6 +19,8 @@ class GeocodeResult:
     tract_name: str
     block_group: str
     state_fips: str
+    zip_code: str = ""
+    city: str = ""
 
     @property
     def tract_code(self) -> str:
@@ -53,6 +55,7 @@ def geocode_address(address: str) -> GeocodeResult:
     county = counties[0] if counties else {}
     tract = tracts[0] if tracts else {}
     bg = block_groups[0] if block_groups else {}
+    components = match.get("addressComponents") or {}
 
     state_fips = str(county.get("STATE", tract.get("STATE", ""))).zfill(2)
     county_code = str(county.get("COUNTY", tract.get("COUNTY", ""))).zfill(3)
@@ -69,4 +72,6 @@ def geocode_address(address: str) -> GeocodeResult:
         tract_name=tract.get("NAME", "Unknown Tract"),
         block_group=bg.get("NAME", ""),
         state_fips=state_fips,
+        zip_code=str(components.get("zip") or ""),
+        city=str(components.get("city") or ""),
     )

@@ -1,0 +1,23 @@
+{
+  "name": "Dallas–Fort Worth, TX",
+  "metro_name": "Dallas–Fort Worth",
+  "description": "DFW metro pilot — Dallas County core with city-level open data overlays.",
+  "state_fips": "48",
+  "state_abbr": "TX",
+  "county_fips": "48113",
+  "county_name": "Dallas County",
+  "county_code": 113,
+  "city_name": "Dallas",
+  "acs_vintage": "2023",
+  "sample_addresses": [
+    "1500 Marilla St, Dallas, TX 75201",
+    "2828 N Haskell Ave, Dallas, TX 75204",
+    "7777 Forest Ln, Dallas, TX 75230",
+    "2323 Victory Ave, Dallas, TX 75219"
+  ],
+  "open_data": {
+    "crime_incidents_url": "https://www.dallasopendata.com/resource/qv6i-rri7.json",
+    "building_permits_url": "https://www.dallasopendata.com/resource/e7gq-4sah.json",
+    "zoning_map_server": "https://egis.dallascityhall.com/arcgis/rest/services/Sdc_public/Zoning/MapServer/15"
+  }
+}

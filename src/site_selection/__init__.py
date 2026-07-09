@@ -1,4 +1,4 @@
-"""Site selection — tract-level scoring for Brazos County / College Station."""
+"""Site selection — tract-level scoring for Dallas–Fort Worth metro."""
 
 from .presets import BUSINESS_PRESETS, METRIC_LABELS
 from .scorecard import build_tract_scorecard

@@ -1,4 +1,4 @@
-"""Address-level location intelligence for College Station demo."""
+"""Address-level location intelligence."""
 
 from .census import clean_acs_record, fetch_county_acs, fetch_tract_acs
 from .geocoder import geocode_address

@@ -1,6 +1,7 @@
 .env
 data/processed/
 data/raw/
+data/google_places_usage.json
 *.db
 __pycache__/
 *.pyc
